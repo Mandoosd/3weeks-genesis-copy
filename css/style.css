@@ -1,0 +1,411 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    line-height: 70px;
+    background: #000;
+
+
+    transition: 0.5s;
+    border-bottom: 1px solid #000;
+}
+
+
+
+.header a {
+    color: #fff;
+}
+
+.header.on a {
+    color: #000;
+}
+
+.header:hover {
+    color: #000;
+    background: #f1f1f1;
+    border-bottom: 1px solid #000;
+}
+
+.header.on {
+    color: #000;
+    line-height: 100px;
+    background: #f1f1f1;
+    border-bottom: 1px solid #000;
+}
+
+.header .inner {
+    display: flex;
+    padding: 0 80px;
+}
+
+.header:hover a {
+    color: #000;
+    border: none;
+}
+
+
+.header h1>a {
+    display: inline-block;
+    width: 170px;
+    height: 34px;
+    background: url(../images/LOGO.png)no-repeat;
+    font-size: 0;
+    vertical-align: middle;
+}
+
+.header:hover h1>a {
+    background: url(../images/LOGO\ invert.png)no-repeat;
+}
+
+.header.on h1>a {
+    background: url(../images/LOGO\ invert.png);
+}
+
+.header .gnb {
+    margin: 0 0 0 80px;
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 80px;
+}
+
+.header .customer {
+    margin: 0 0 0 auto;
+}
+
+.header .customer>ul {
+    display: flex;
+    gap: 40px;
+}
+
+
+.visual_Slide .itm {
+    height: 1000px;
+}
+
+.main_Visual {
+    position: relative;
+}
+
+.main_Visual .visual_Slide .itm01 {
+    background: url(../images/img01.jpg) no-repeat center center/cover;
+}
+
+.main_Visual .visual_Slide .itm02 {
+    background: url(../images/img02.jpg) no-repeat center center/cover;
+}
+
+.main_Visual .visual_Slide .itm03 {
+    background: url(../images/img03.jpg) no-repeat center center/cover;
+}
+
+
+.more_view {
+    position: absolute;
+    bottom: 250px;
+    left: 18%;
+}
+
+.more_view ul {
+    gap: 60px;
+}
+
+.more_view ul {
+    display: flex;
+}
+
+.more_view a {
+    color: #fff;
+}
+
+.main_Visual .scroll {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 0;
+    width: 32px;
+    height: 48px;
+    border: 2px solid #fff;
+    border-radius: 16px;
+
+
+    animation: wheel 1s infinite;
+}
+
+.main_Visual .scroll::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 4px;
+    height: 12px;
+    background: #fff;
+    border-radius: 2px;
+
+    animation: wheel 1s infinite;
+}
+
+@keyframes wheel {
+    0% {
+        transform: translate(-50%, 0);
+    }
+
+    100% {
+        transform: translate(-50%, 25%);
+    }
+}
+
+.main_Visual .slick-dots {
+    position: absolute;
+    bottom: 300px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.main_Visual .slick-dots li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.main_Visual .slick-dots li button {
+    font-size: 0;
+    border: none;
+    width: 10px;
+    height: 10px;
+    background: #333;
+    border-radius: 50%;
+}
+
+.main_Visual .slick-dots li.slick-active button {
+    background: #000;
+    outline: 2px solid #fff;
+}
+
+.sub_Visual {
+    position: relative;
+    background: #111111;
+    padding: 120px 0 120px 0;
+}
+
+
+
+.sub_Visual .models {
+    padding: 0px 0 0 330px;
+    color: #fff;
+    line-height: 64px;
+}
+
+.sub_Visual .models h2 {
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.sub_Visual .lnk {
+    background: #111111;
+    color: #fff;
+    cursor: pointer;
+    border-width: 0;
+    border-bottom: 1px solid #fff;
+    font-size: 20px;
+    width: 300px;
+    line-height: 300px;
+}
+
+.sub_Visual .model_Slide {
+    padding: 0 300px;
+}
+
+
+.sub_Visual .img_wrap {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    border: 30px solid #101010;
+    background: #151515;
+    color: #fff;
+    font-weight: 100;
+}
+
+.sub_Visual .img_wrap strong {
+    position: absolute;
+    width: 70%;
+    height: 52px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    line-height: 48px;
+    word-break: break-all;
+    border: 1px solid #fff;
+}
+
+.sub_Visual .img_wrap strong:hover {
+    background: #fff;
+    color: #000;
+    font-weight: 800;
+    width: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.sub_Visual .img_wrap:hover {
+    background: #252525;
+    transition: 1s;
+}
+
+.sub_Visual .img_wrap h2 {
+    padding: 0px 0 0 20px;
+    font-size: 32px;
+}
+
+.sub_Visual .img_wrap p {
+    line-height: 30px;
+    padding: 20px 0 0 20px;
+}
+
+.sub_Visual .img_wrap02 p {
+    font-size: 0;
+}
+
+.sub_Visual .img_wrap03 p {
+    font-size: 0;
+
+}
+
+.sub_Visual .img_wrap05 p {
+    font-size: 0;
+
+}
+
+
+.sub_Visual .slick-dots {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.sub_Visual .slick-dots li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.sub_Visual .slick-dots li button {
+    font-size: 0;
+    border: none;
+    width: 10px;
+    height: 10px;
+    background: #333;
+    border-radius: 50%;
+
+
+    cursor: pointer;
+}
+
+.sub_Visual .slick-dots li.slick-active button {
+    background: #000;
+    outline: 2px solid #fff;
+}
+
+.sub_Visual .img_wrap figure {
+    height: 330px;
+    transform: translate(0, 25%);
+}
+
+.gif_icon {
+    display: flex;
+    background: #111111;
+    padding: 330px;
+    text-align: center;
+}
+
+.gif_icon .img_gif {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    line-height: 80px;
+    color: #fff;
+}
+
+.gif_icon .img_gif img {
+    cursor: pointer;
+}
+
+.visual_Movie {
+    line-height: 0;
+}
+
+
+.visual_Movie video {
+    width: 100%;
+}
+
+.footer {
+    position: relative;
+    background: #151515;
+}
+
+.footer .sns {
+    display: flex;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+
+.footer .sns .left {
+    display: flex;
+    color: #f1f1f1;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 80px;
+    padding: 0 15px;
+    line-height: 80px;
+}
+
+.footer .sns .right {
+    display: flex;
+    position: absolute;
+    color: #f1f1f1;
+    right: 0;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 80px;
+    padding: 0 15px;
+    line-height: 80px;
+
+}
+
+.text_slide {
+    color: #fff;
+    line-height: 40px;
+
+}
+
+
+
+
+.Chat_Bot {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+
+    width: 60px;
+    height: 60px;
+
+    font-size: 32px;
+
+    background: #fff;
+    border-radius: 30px;
+    border: 1px solid #000;
+    box-shadow: 10px;
+
+
+    z-index: 999;
+    cursor: pointer;
+}
